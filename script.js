@@ -49,7 +49,7 @@ function generatePassword() {
     }
     if (options.wantsSpecial) {
       possibleCharacters = possibleCharacters.concat(special);
-    }
+    } 
   
   
   for (var i = 0; i <= length; i++) {
