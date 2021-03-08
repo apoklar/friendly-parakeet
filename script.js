@@ -50,8 +50,6 @@ function generatePassword() {
     if (options.wantsSpecial) {
       possibleCharacters = possibleCharacters.concat(special);
     }
-
-    console.log(options)
   
   
   for (var i = 0; i <= length; i++) {
