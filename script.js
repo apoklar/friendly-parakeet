@@ -52,13 +52,11 @@ function generatePassword() {
     } 
   
   
-  for (var i = 0; i <= length; i++) {
-    var randomIndex = [Math.floor(Math.random() * options.length)];
-    possibleCharacters.push(randomIndex);
+    for (var i = 0; i <= options.length; i++) {
+      var randomIndex = Math.floor(Math.random() * possibleCharacters.length);
+      randomPassword = randomPassword + possibleCharacters[randomIndex]; 
 
   } 
-
-  document.getElementById("password").value = randomPassword;
   
   return randomPassword;
 }
